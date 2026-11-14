@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WikiSeek</title>
+<meta name="description" content="Biblioteca buscable de psiquiatría, neurociencias y los libros de Roger Abanto Marín.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e5a55'/%3E%3Cpath d='M14 20h16c4 0 6 2 6 6v22c0-4-2-6-6-6H14z' fill='%23faf7f0'/%3E%3Cpath d='M50 20H34c-4 0-6 2-6 6v22c0-4 2-6 6-6h16z' fill='%23e8d9b8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="libros/libros.css">
+</head>
+<body data-page="inicio">
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><rect width="64" height="64" rx="14" fill="#0e5a55"/><path d="M14 20h16c4 0 6 2 6 6v22c0-4-2-6-6-6H14z" fill="#faf7f0"/><path d="M50 20H34c-4 0-6 2-6 6v22c0-4 2-6 6-6h16z" fill="#e8d9b8"/></svg>
+      </span>
+      <span><strong>WikiSeek</strong><small>Biblioteca personal</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+<p class="nav-label">Biblioteca</p><ul>
+<li><a class="active" href="index.html">Inicio</a></li>
+<li><a href="libros/index.html">Libros</a></li>
+</ul>
+<p class="nav-label">Fármacos</p><ul>
+<li><a href="articulos/lisdexanfetamina.html">Lisdexanfetamina</a></li>
+</ul>
+<p class="nav-label">Nootrópicos</p><ul>
+<li><a href="articulos/nootropicos.html">Nootrópicos</a></li>
+</ul>
+<p class="nav-label">Temas</p><ul>
+<li><a href="articulos/adicciones.html">Estimulantes y adicciones</a></li>
+<li><a href="articulos/seguridad.html">Seguridad y regulación</a></li>
+</ul>
+<p class="nav-label">Referencia</p><ul>
+<li><a href="articulos/bitacora.html">Bitácora</a></li>
+<li><a href="articulos/notas.html">Notas</a></li>
+<li><a href="articulos/glosario.html">Glosario</a></li>
+<li><a href="articulos/referencias.html">Referencias</a></li>
+</ul>
+</nav>
+<p class="nav-label">Documentos</p><ul class="docs">
+<li><a href="documentos/lisdexanfetamina.txt">Informe LDX (.txt)</a></li>
+<li><a href="documentos/nootropicos.pdf">Informe nootrópicos (.pdf)</a></li>
+<li><a href="documentos/nootropicos.docx">Informe nootrópicos (.docx)</a></li>
+</ul>
+    <p class="side-foot">Actualizado el 12 de noviembre de 2026.<br>Contenido académico.</p>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <form class="search" role="search" action="index.html" method="get">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="qTop" name="q" type="search" placeholder="Buscar en la biblioteca…" autocomplete="off" aria-label="Buscar">
+        <kbd>Ctrl K</kbd>
+      </form>
+      <a class="toplink" href="index.html">Inicio</a>
+    </header>
+    <main id="contenido" class="content">
+      
+<section class="hero">
+  <p class="kicker">Biblioteca personal · 2026</p>
+  <h1>WikiSeek</h1>
+  <p class="lede">Todo lo que hemos investigado sobre lisdexanfetamina y nootrópicos, reunido en un solo lugar y con buscador propio. Sin volver a empezar.</p>
+  <form class="hero-search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input id="q" name="q" type="search" placeholder="Buscar sustancias, efectos, estudios, conceptos…" autocomplete="off" aria-label="Buscar en WikiSeek">
+    <button type="submit">Buscar</button>
+  </form>
+  <p class="stats">7 artículos · 19.995 palabras · 2 informes · 61 referencias</p>
+</section>
+<section class="explore">
+  <div class="chips" role="group" aria-label="Filtrar por categoría">
+    <button class="chip active" data-filter="all">Todo</button>
+    <button class="chip" data-filter="farmacos">Fármacos</button>
+    <button class="chip" data-filter="nootropicos">Nootrópicos</button>
+    <button class="chip" data-filter="temas">Temas</button>
+    
+    <button class="chip" data-filter="libros">Libros</button>
+    <button class="chip" data-filter="referencia">Referencia</button>
+  </div>
+  <div class="grid" id="results">
+    <a class="card" href="articulos/lisdexanfetamina.html" data-cat="farmacos" data-title="Lisdexanfetamina">
+  <span class="card-cat">Fármacos</span>
+  <h2>Lisdexanfetamina</h2>
+  <p>Profármaco de dexanfetamina: química, farmacología, eficacia en TDAH y trastorno por atracones, seguridad, abuso y situación regulatoria en el Perú.</p>
+  <span class="card-meta">7.795 palabras · Informe</span>
+</a>
+<a class="card" href="articulos/nootropicos.html" data-cat="nootropicos" data-title="Nootrópicos">
+  <span class="card-cat">Nootrópicos</span>
+  <h2>Nootrópicos</h2>
+  <p>Guía integral de fármacos, suplementos y productos comercializados como potenciadores cognitivos: evidencia, dosis, seguridad, ética y regulación.</p>
+  <span class="card-meta">8.257 palabras · Informe</span>
+</a>
+<a class="card" href="articulos/adicciones.html" data-cat="temas" data-title="Estimulantes y adicciones">
+  <span class="card-cat">Temas</span>
+  <h2>Estimulantes y adicciones</h2>
+  <p>Sustitución agonista, evidencia en cocaína y metanfetamina, y manejo del TDAH comórbido con trastorno por consumo de sustancias.</p>
+  <span class="card-meta">690 palabras · Artículo</span>
+</a>
+<a class="card" href="articulos/seguridad.html" data-cat="temas" data-title="Seguridad, interacciones y regulación de los nootrópicos">
+  <span class="card-cat">Temas</span>
+  <h2>Seguridad, interacciones y regulación de los nootrópicos</h2>
+  <p>Riesgos cardiovasculares, psiquiátricos, hepáticos y hematológicos; interacciones; regulación y señales de alarma.</p>
+  <span class="card-meta">674 palabras · Artículo</span>
+</a>
+<a class="card" href="articulos/bitacora.html" data-cat="referencia" data-title="Bitácora de la biblioteca">
+  <span class="card-cat">Referencia</span>
+  <h2>Bitácora de la biblioteca</h2>
+  <p>Cronología de las consultas, los entregables y las conclusiones principales de la biblioteca.</p>
+  <span class="card-meta">571 palabras · Artículo</span>
+</a>
+<a class="card" href="articulos/glosario.html" data-cat="referencia" data-title="Glosario">
+  <span class="card-cat">Referencia</span>
+  <h2>Glosario</h2>
+  <p>Términos de farmacología, neurología y regulación usados en los artículos.</p>
+  <span class="card-meta">459 palabras · Artículo</span>
+</a>
+<a class="card" href="articulos/referencias.html" data-cat="referencia" data-title="Referencias">
+  <span class="card-cat">Referencia</span>
+  <h2>Referencias</h2>
+  <p>Bibliografía completa de los informes de lisdexanfetamina y nootrópicos.</p>
+  <span class="card-meta">1.549 palabras · Índice</span>
+</a>
+  </div>
+  <p class="empty" id="empty" hidden>No hay resultados. Prueba con otra palabra o abre el <a href="articulos/glosario.html">glosario</a>.</p>
+</section>
+<section class="home-books">
+  <div class="home-books-head">
+    <p class="kicker">Libros del autor</p>
+    <h2>Tres libros para pensar la psiquiatría</h2>
+    <p>Del síntoma a la persona, de la lesión a la red, del biomarcador al psicomarcador. <strong>La psiquiatría del porvenir</strong> ya está en acceso abierto; los dos primeros se liberarán en febrero de 2027.</p>
+  </div>
+  <div class="book-grid">
+    <a class="book-card" href="libros/neurociencias.html">
+  <img src="libros/portadas/neurociencias.jpg" alt="Portada de Neurociencias para psiquiatras">
+  <div class="book-card-body">
+    <span class="book-tag">Neurociencias · Psiquiatría</span>
+    <h3>Neurociencias para psiquiatras</h3>
+    <p class="book-card-sub">La consciencia y sus cuatro estadios</p>
+    <span class="book-card-link">Ver ficha y Amazon →</span>
+  </div>
+</a><a class="book-card" href="libros/tratamientos.html">
+  <img src="libros/portadas/tratamientos.jpg" alt="Portada de Tratamientos en psiquiatría">
+  <div class="book-card-body">
+    <span class="book-tag">Psiquiatría clínica · Manual</span>
+    <h3>Tratamientos en psiquiatría</h3>
+    <p class="book-card-sub">El arte de restaurar las redes</p>
+    <span class="book-card-link">Ver ficha y Amazon →</span>
+  </div>
+</a><a class="book-card" href="libros/porvenir.html">
+  <img src="libros/portadas/porvenir.jpg" alt="Portada de La psiquiatría del porvenir">
+  <div class="book-card-body">
+    <span class="book-tag">Ensayo · Psiquiatría</span>
+    <h3>La psiquiatría del porvenir</h3>
+    <p class="book-card-sub">Hacia un nuevo paradigma en psiquiatría</p>
+    <span class="book-card-link">Descargar gratis →</span>
+  </div>
+</a>
+  </div>
+  <p class="home-books-link"><a href="libros/index.html">Ver los tres libros →</a></p>
+</section>
+<section class="howto">
+  <h2>Cómo usar la biblioteca</h2>
+  <div class="howto-grid">
+    <div><h3>Buscar</h3><p>Escribe en el buscador o pulsa <kbd>Ctrl</kbd> + <kbd>K</kbd>. La búsqueda recorre el texto completo de los artículos.</p></div>
+    <div><h3>Navegar</h3><p>La barra lateral agrupa los contenidos por categoría. Cada artículo tiene su propio índice interno.</p></div>
+    <div><h3>Descargar</h3><p>Los documentos originales (.txt, .pdf, .docx) están en la sección <em>Documentos</em>.</p></div>
+  </div>
+</section>
+
+    </main>
+    <footer class="foot">
+      <p><strong>WikiSeek</strong> · Biblioteca académica de Roger Abanto Marín.</p>
+      <p>Documento informativo. No sustituye la consulta médica ni la evaluación individual.</p>
+    </footer>
+  </div>
+</div>
+<script src="assets/search-data.js"></script>
+<script src="assets/search.js"></script>
+</body>
+</html>
