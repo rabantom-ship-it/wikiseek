@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rabantom-ship-it.github.io/wikiseek/</loc></url>
-  <url><loc>https://rabantom-ship-it.github.io/wikiseek/libros/</loc></url>
-  <url><loc>https://rabantom-ship-it.github.io/wikiseek/libros/neurociencias.html</loc></url>
-  <url><loc>https://rabantom-ship-it.github.io/wikiseek/libros/tratamientos.html</loc></url>
-  <url><loc>https://rabantom-ship-it.github.io/wikiseek/libros/porvenir.html</loc></url>
+  <url><loc>__PUBLIC_URL__/</loc></url>
+  <url><loc>__PUBLIC_URL__/libros/</loc></url>
+  <url><loc>__PUBLIC_URL__/libros/neurociencias.html</loc></url>
+  <url><loc>__PUBLIC_URL__/libros/tratamientos.html</loc></url>
+  <url><loc>__PUBLIC_URL__/libros/porvenir.html</loc></url>
 </urlset>
