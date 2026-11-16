@@ -1,10 +1,9 @@
 cff-version: 1.2.0
 message: "Si usas estos libros, cita la obra correspondiente."
-title: "WikiSeek — libros de Roger Abanto Marín"
+title: "WikiSeek: biblioteca y libros de Roger Abanto Marín"
 authors:
   - family-names: "Abanto Marín"
     given-names: "Roger Alejandro"
     orcid: "https://orcid.org/0000-0003-4828-6290"
 year: 2026
-doi: "10.5281/zenodo.24205039"
-url: "https://zenodo.org/records/24205039"
+url: "https://rabantom-ship-it.github.io/wikiseek/"
